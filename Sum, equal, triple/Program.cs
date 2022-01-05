@@ -7,14 +7,6 @@ num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Second number: ");
 num2 = Convert.ToInt32(Console.ReadLine());
 
-sum = num1 + num2;
+sum = (num1 == num2) ? (num1 + num2) * 3 : num1 + num2;
 
-if (num1 == num2)
-{
-    sum = sum * 3;
-    Console.WriteLine(sum);
-}
-else
-{
-    Console.WriteLine(sum);
-}
+Console.WriteLine(sum);
